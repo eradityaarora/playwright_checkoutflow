@@ -1,0 +1,22 @@
+{
+  "name": "playwright_checkoutflow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": " Checkout flow playwirght automation suite - lean technologies",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "allure-playwright": "^3.0.4",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright test --reporter=html",
+    "test:allure": "playwright test && allure generate allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "author": "Aditya Arora",
+  "license": "ISC",
+  "keywords": []
+}
